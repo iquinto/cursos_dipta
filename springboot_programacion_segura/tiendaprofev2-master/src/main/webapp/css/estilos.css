@@ -1,0 +1,158 @@
+p, h1, h2, td, th, ul, li, ol, a, input, select, option, button, label, span {
+    font-family: Calibiy, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 12pt;
+    text-align: justify;
+    color:#223;
+}
+
+h1 {
+    font-size: 24pt;
+}
+
+h2 {
+    font-size: 16pt;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #fafafa;
+    margin: 0px;
+    min-height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+
+header, nav, footer {
+    margin: 0px;
+    background-color: #cdc;
+    padding: 0px 10%;
+}
+
+header, footer {
+    overflow: hidden;
+}
+
+footer {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    left: 0px;
+    bottom:0px;
+}
+
+footer p {
+    text-align: right;
+}
+
+article {
+	padding: 0px 10% 2.5em 10%;
+}
+
+/* ---------------------- Tablas  -------------------- */
+table {
+	border-collapse: collapse;
+}
+
+td {
+	border:1px solid #cdc;
+	padding:0.5em;
+}
+
+thead td {
+	background-color:  #cdc;
+	border-color: #d4e4d4;
+}
+
+
+table.pequeña {
+	width: 30%;
+}
+table.mediana {
+	width: 60%;
+}
+table.grande {
+	width: 100%;
+}
+
+/* ---------------------- Formularios  -------------------- */
+button, input, select {
+	padding:0.3em;
+}
+
+/* ---------------------- Un menú  -------------------- */
+nav {
+    margin-top: 5px;
+}
+
+nav > ul {
+    padding-left: 0px;
+	padding-bottom: 5px;
+	height: 2.2em;
+	margin: 0px;
+}
+
+nav > ul li {
+	list-style:none;
+	margin: 0px;
+}
+
+nav > ul > li {
+	float:left;
+	padding-left:2em;
+}
+
+nav > ul > li:first-of-type {
+	padding-left:0px;
+}
+
+nav > ul li a {
+	background-color:#cdc;
+	display:block;
+	padding:10px 12px;
+	text-decoration: none;
+	margin: 0px;
+	text-align: left;
+}
+
+nav > ul li .flecha{
+	font-size: 9px;
+	padding-left: 6px;
+	display: none;
+}
+
+nav > ul li a:not(:last-child) .flecha {
+	display: inline;
+}
+
+nav > ul li a:hover {
+	background-color:#bcb;
+}
+
+nav > ul li {
+	position:relative;
+}
+
+nav > ul li ul {
+	display:none;
+	position:absolute;
+	min-width:140px;
+}
+
+nav > ul li:hover > ul {
+	display:block;
+	z-index: 10;
+}
+
+nav > ul li ul li ul {
+	right:-140px;
+	top:0;
+}
+
+.limpiar {
+	clear: both;
+}
